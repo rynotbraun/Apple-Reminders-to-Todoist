@@ -94,7 +94,7 @@ if (quitAfterFinish) r.quit();
  * execute todoist commands (todoist api)
  */
 function todoistCmd(cmds) {
-	app.doShellScript('curl https://todoist.com/API/v7/sync'+
+	app.doShellScript('curl https://api.todoist.com/sync/v8/sync'+
 		' -d token='+todoistToken+' -d commands=\''+JSON.stringify(cmds)+'\'');
 }
 
